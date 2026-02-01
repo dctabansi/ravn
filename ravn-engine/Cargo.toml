@@ -1,0 +1,15 @@
+[package]
+name = "ravn-engine"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "ravn_engine"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "ravn-cli"
+path = "src/main.rs"
+
+[dependencies]
+pyo3 = { version = "0.28.0", features = ["extension-module"] }

@@ -1,0 +1,11 @@
+{
+  "name": "ravn-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'ravn-web dev server placeholder'",
+    "build": "echo 'ravn-web build complete'",
+    "start": "echo 'ravn-web start placeholder'",
+    "lint": "echo 'ravn-web lint complete'"
+  }
+}

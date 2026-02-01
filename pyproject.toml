@@ -1,0 +1,43 @@
+[project]
+name = "ravn"
+version = "0.1.0"
+description = "Recursive Adaptive Value Network"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ravn-engine",
+    "ravn-api",
+    "ravn-train",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = [
+    "ravn-engine",
+    "ravn-api",
+    "ravn-train",
+]
+
+[tool.uv.sources]
+ravn-engine = { workspace = true }
+ravn-api = { workspace = true }
+ravn-train = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "maturin>=1.11.5",
+    "pytest>=8.0.0",
+    "ruff>=0.15.4",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["ravn-api/tests"]

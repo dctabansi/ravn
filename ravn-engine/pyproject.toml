@@ -1,0 +1,14 @@
+[project]
+name = "ravn-engine"
+version = "0.1.0"
+description = "ravn chess engine and PyO3 bridge"
+requires-python = ">=3.14"
+dependencies = []
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+module-name = "ravn_engine"
+features = ["pyo3/extension-module"]
