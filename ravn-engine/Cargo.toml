@@ -12,4 +12,5 @@ name = "ravn-cli"
 path = "src/main.rs"
 
 [dependencies]
-pyo3 = { version = "0.28.1", features = ["extension-module"] }
+engine_macros = { path = "engine_macros" }
+pyo3 = { version = "0.28.2", features = ["extension-module"] }

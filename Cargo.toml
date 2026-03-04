@@ -2,4 +2,5 @@
 resolver = "3"
 members = [
     "ravn-engine",
+    "ravn-engine/engine_macros",
 ]
